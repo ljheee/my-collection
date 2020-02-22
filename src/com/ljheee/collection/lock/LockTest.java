@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by lijianhua04 on 2019/2/26.
+ * Created by ljheee on 2019/2/26.
  */
 public class LockTest {
 

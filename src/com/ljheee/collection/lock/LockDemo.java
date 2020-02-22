@@ -3,7 +3,7 @@ package com.ljheee.collection.lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by lijianhua04 on 2018/12/27.
+ * Created by ljheee on 2018/12/27.
  */
 public class LockDemo {
 

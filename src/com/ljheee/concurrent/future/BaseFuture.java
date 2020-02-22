@@ -3,7 +3,7 @@ package com.ljheee.concurrent.future;
 import java.util.concurrent.Future;
 
 /**
- * Created by lijianhua04 on 2019/5/23.
+ * Created by ljheee on 2019/5/23.
  */
 public interface BaseFuture<T> extends Future<T> {
     default BaseFuture addListener(FutureListener<? extends Future<? super T>> var1){

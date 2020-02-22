@@ -3,11 +3,11 @@ package com.ljheee.collection.list;
 import java.util.LinkedList;
 
 /**
- * Created by lijianhua04 on 2018/7/21.
+ * Created by ljheee on 2018/7/21.
  */
 public class MyHashMap {
 
-    static class MyEntry{
+    static class MyEntry {
         Object key;
         Object value;
 
@@ -35,12 +35,12 @@ public class MyHashMap {
         this(16);
     }
 
-    public void put(Object key, Object value){
+    public void put(Object key, Object value) {
 
         int hash = key.hashCode();
-        hash = hash <0? -hash:hash;
-        int n = hash%capacity;
-        if(linkedLists[n] == null){
+        hash = hash < 0 ? -hash : hash;
+        int n = hash % capacity;
+        if (linkedLists[n] == null) {
             linkedLists[n] = new LinkedList();
         }
 
@@ -48,25 +48,23 @@ public class MyHashMap {
     }
 
 
-    public MyEntry get(Object key){
+    public MyEntry get(Object key) {
 
         int hash = key.hashCode();
-        hash = hash < 0 ? -hash:hash;
-        int n = hash%capacity;
+        hash = hash < 0 ? -hash : hash;
+        int n = hash % capacity;
 
-        if(linkedLists[n] == null){
+        if (linkedLists[n] == null) {
             return null;
         }
 
         for (Object e : linkedLists[n]) {
-           if( ((MyEntry)e).key.equals(key)){
-               return (MyEntry) e;
-           }
+            if (((MyEntry) e).key.equals(key)) {
+                return (MyEntry) e;
+            }
         }
         return null;
     }
-
-
 
 
 }

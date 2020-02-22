@@ -3,7 +3,7 @@ package com.ljheee.collection.list;
 import java.util.HashMap;
 
 /**
- * Created by lijianhua04 on 2018/7/23.
+ * Created by ljheee on 2018/7/23.
  */
 public class MyHashSet {
 
